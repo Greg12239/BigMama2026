@@ -8030,6 +8030,15 @@ h2 {
   transform: translate3d(0, -3px, 0);
 }
 
+/* Match the Paris burger's wider photographic framing to the Tokyo card. */
+#menu [data-product-id="mama-in-paris"] .menu-card__image .product-image {
+  transform: scale(1.3);
+}
+
+#menu [data-product-id="mama-in-paris"]:hover .menu-card__image .product-image {
+  transform: scale(1.3);
+}
+
 @media (hover: none) {
   #menu .menu-card:hover .menu-card__image .product-image {
     transform: translate3d(0, 0, 0);
