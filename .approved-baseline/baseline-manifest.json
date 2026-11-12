@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-07-05T13:47:11.873842Z",
+  "source_upload": "Bg.zip",
+  "purpose": "Approved clean baseline for Codex restore and change-control workflow",
+  "files": {
+    "index.html": {
+      "sha256": "c063a229d0e04a4e8d862340b176b539b5ea5dbc702edae0d89852762471e47a",
+      "bytes": 34218
+    },
+    "styles.css": {
+      "sha256": "42e1d6427cc7bc753abad4caca982146d43cd71c0d24662381738745b7778a43",
+      "bytes": 103738
+    },
+    "app.js": {
+      "sha256": "2440ace893b7a00fb3f2a59999b6954e04fd239becf2ce0773282ce0b29b8d7b",
+      "bytes": 8878
+    },
+    "README.md": {
+      "sha256": "e2569fe2ef11f4e94f72d52fc6a4cc3c4bdac4aee700e290d6cd78ad3fd3df88",
+      "bytes": 795
+    }
+  }
+}

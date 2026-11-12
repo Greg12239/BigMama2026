@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Big Mama Burgers n' Fries premium animated landing page."
+    />
+    <title>Big Mama | Burgers n' Fries</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <svg class="liquid-filter" width="0" height="0" aria-hidden="true" focusable="false">
+      <filter id="gooey-liquid">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix
+          in="blur"
+          mode="matrix"
+          values="
+            1 0 0 0 0
+            0 1 0 0 0
+            0 0 1 0 0
+            0 0 0 22 -9
+          "
+          result="goo"
+        />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </svg>
+
+    <div class="loader" data-loader>
+      <div class="loader__ambient-layer" aria-hidden="true">
+        <span class="loader__ambient loader__ambient--top-left"></span>
+        <span class="loader__ambient loader__ambient--top-right"></span>
+        <span class="loader__ambient loader__ambient--bottom-left"></span>
+        <span class="loader__ambient loader__ambient--bottom-right"></span>
+        <span class="loader__ambient loader__ambient--left-streak"></span>
+        <span class="loader__ambient loader__ambient--right-streak"></span>
+        <span class="loader__spark loader__spark--one"></span>
+        <span class="loader__spark loader__spark--two"></span>
+        <span class="loader__spark loader__spark--three"></span>
+      </div>
+      <div class="loader__center-energy" aria-hidden="true">
+        <span class="loader__center-glow"></span>
+        <span class="loader__center-blob loader__center-blob--one"></span>
+        <span class="loader__center-blob loader__center-blob--two"></span>
+      </div>
+      <div class="loader__mark">
+        <img
+          class="loader__logo"
+          src="public/assets/logo/big-mama-logo-transparent.png"
+          alt="Big Mama Burgers N' Fries logo"
+          width="799"
+          height="825"
+        />
+        <div class="sauce-underline" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <a class="big-mama-logo-link" href="#top" aria-label="Big Mama home">
+      <img
+        class="big-mama-floating-logo"
+        src="public/assets/big-mama-logo.png"
+        alt="Big Mama Burgers N' Fries logo"
+        width="834"
+        height="860"
+      />
+    </a>
+
+    <header class="site-header" data-header>
+      <nav class="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="#featured">Featured</a>
+        <a href="#experience">Experience</a>
+        <a class="menu-image-link" href="#menu" aria-label="Menu">
+          <img src="public/assets/MENU-nav-transparent.png" alt="Menu" width="1120" height="486" />
+        </a>
+        <a href="#story">Story</a>
+        <a href="#order">Contact</a>
+        <a
+          class="primary-nav__mobile-cta efood-cta"
+          href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Order Big Mama through efood"
+        >
+          <span class="efood-liquid-layer" aria-hidden="true">
+            <span class="efood-liquid-blob efood-blob-1"></span>
+            <span class="efood-liquid-blob efood-blob-2"></span>
+            <span class="efood-liquid-blob efood-blob-3"></span>
+            <span class="efood-liquid-blob efood-blob-4"></span>
+          </span>
+          <img class="efood-cta-image" src="public/assets/efood-button.png" alt="Order through efood" width="210" height="68" />
+        </a>
+      </nav>
+
+      <a
+        class="nav-cta nav-cta--efood"
+        href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Order Big Mama through efood"
+      >
+        <span class="efood-liquid-layer" aria-hidden="true">
+          <span class="efood-liquid-blob efood-blob-1"></span>
+          <span class="efood-liquid-blob efood-blob-2"></span>
+          <span class="efood-liquid-blob efood-blob-3"></span>
+          <span class="efood-liquid-blob efood-blob-4"></span>
+        </span>
+        <img class="efood-cta-image" src="public/assets/efood-button.png" alt="Order through efood" width="210" height="68" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero__ambient" aria-hidden="true">
+          <span class="heat-panel heat-panel--one"></span>
+          <span class="heat-panel heat-panel--two"></span>
+          <span class="line line--one"></span>
+          <span class="line line--two"></span>
+        </div>
+
+        <div class="hero__content reveal">
+          <h1 id="hero-title">
+            Street heat.
+            <span>Big Mama energy.</span>
+          </h1>
+          <p class="hero__copy">
+            Bright packaging, hot fries, loud orange attitude, and campaign imagery
+            that makes the brand feel alive before the first bite.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary liquid-button" href="#menu">
+              <span class="liquid-layer" aria-hidden="true">
+                <span class="liquid-blob blob-1"></span>
+                <span class="liquid-blob blob-2"></span>
+                <span class="liquid-blob blob-3"></span>
+                <span class="liquid-blob blob-4"></span>
+              </span>
+              <span class="button-content"><span class="button-text">Explore menu</span></span>
+            </a>
+            <a class="button button--ghost liquid-button" href="#experience">
+              <span class="liquid-layer" aria-hidden="true">
+                <span class="liquid-blob blob-1"></span>
+                <span class="liquid-blob blob-2"></span>
+                <span class="liquid-blob blob-3"></span>
+                <span class="liquid-blob blob-4"></span>
+              </span>
+              <span class="button-content"><span class="button-text">See the build</span></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-parallax="0.18">
+          <div class="hero-photo hero-photo--main">
+            <img
+              src="public/assets/campaign/street-burger-closeup.jpg"
+              alt="Big Mama burgers and fries shared outdoors"
+              width="1122"
+              height="1402"
+            />
+          </div>
+          <div class="hero-photo hero-photo--support" aria-hidden="true">
+            <img
+              src="public/assets/campaign/street-crew-bags.jpg"
+              alt=""
+              width="1086"
+              height="1448"
+            />
+          </div>
+        </div>
+
+        <div class="hero-trust-strip reveal" aria-label="Big Mama highlights">
+          <div class="hero-trust-item">
+            <span class="hero-trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 10.5c.5-3.2 3.2-5 8-5s7.5 1.8 8 5H4Z" />
+                <path d="M4.5 14h15" />
+                <path d="M6 18h12" />
+                <path d="M5 14c-.6 1.4.4 4 2.2 4h9.6c1.8 0 2.8-2.6 2.2-4" />
+              </svg>
+            </span>
+            <span class="hero-trust-copy">
+              <strong>100% Fresh Beef</strong>
+              <small>Smashed to order.<br />Never frozen.</small>
+            </span>
+          </div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M7 9 6 3h3l.8 6" />
+                <path d="m11 9 .4-6h3L14 9" />
+                <path d="m15.8 9 1-6h3L18 9" />
+                <path d="M5.5 9h13l-1.2 12H6.7L5.5 9Z" />
+              </svg>
+            </span>
+            <span class="hero-trust-copy">
+              <strong>Handcut Fries</strong>
+              <small>Crispy, golden<br />&amp; perfectly seasoned.</small>
+            </span>
+          </div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12.3 21c3.2-1.1 5.4-3.6 5.4-7.1 0-3-1.8-5.8-4.2-8.5-.4 2.7-1.4 4.4-3 5.5.3-2.4-.7-4.5-2.7-6C7.4 8 4.5 10.6 4.5 14c0 3.4 2.4 6 5.5 7" />
+                <path d="M10.4 20.6c-1-1.2-.9-3.1.3-4.4.5 1.1 1.3 1.8 2.5 2.2.2-1.2.1-2.5-.5-3.8 1.9 1.2 3 2.9 2.5 4.6-.3 1.1-1.1 1.8-2.2 2.2" />
+              </svg>
+            </span>
+            <span class="hero-trust-copy">
+              <strong>Bold Flavors</strong>
+              <small>Big taste. No shortcuts.<br />Ever.</small>
+            </span>
+          </div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M7 8h10l-1.2 13H8.2L7 8Z" />
+                <path d="M9 8V5c0-1.4 1-2.3 2.3-2.3H14" />
+                <path d="M6 8h12" />
+                <path d="M9 13h6" />
+              </svg>
+            </span>
+            <span class="hero-trust-copy">
+              <strong>Made To Match</strong>
+              <small>From sauces to sides,<br />everything hits.</small>
+            </span>
+          </div>
+          <a class="hero-trust-item hero-trust-item--cta" href="#order" aria-label="Find Big Mama locations">
+            <span class="hero-trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z" />
+                <path d="M12 12.2a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" />
+              </svg>
+            </span>
+            <span class="hero-trust-copy">
+              <strong>Find Us</strong>
+              <small>See locations <span aria-hidden="true">↗</span></small>
+            </span>
+          </a>
+        </div>
+
+        <a class="scroll-cue" href="#featured" aria-label="Scroll to featured burger">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="featured section-shell" id="featured" aria-labelledby="featured-title">
+        <div class="built-content">
+          <div class="section-kicker reveal">
+            <p class="eyebrow">Signature drop</p>
+            <h2 id="featured-title">Built to be remembered.</h2>
+            <a class="review-pill" href="#reviews" aria-label="Leave a review for Big Mama">
+              <span class="review-score">
+                <span class="review-star" aria-hidden="true">★</span>
+                <span class="review-rating">4.9</span>
+              </span>
+              <span class="review-divider" aria-hidden="true"></span>
+              <span class="review-copy">
+                <span class="review-main">Leave a Review</span>
+                <span class="review-sub">Rated by locals</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="floating-burger-zone" aria-hidden="true">
+            <img
+              class="floating-burger"
+              src="public/assets/exploded-burger-cutout.png"
+              alt=""
+              width="1183"
+              height="1240"
+              loading="lazy"
+              data-scroll-motion
+              data-scroll-x="-10"
+              data-scroll-y="24"
+              data-scroll-rotate="2.4"
+            />
+          </div>
+        </div>
+
+        <div class="street-fries-zone reveal" aria-hidden="true">
+          <img
+            class="street-fries-visual"
+            src="public/assets/fries-3d-cutout.png"
+            alt=""
+            width="1041"
+            height="1347"
+            loading="lazy"
+            data-scroll-motion
+            data-scroll-x="18"
+            data-scroll-y="-28"
+            data-scroll-rotate="-4"
+          />
+        </div>
+
+        <article class="feature-card reveal street-stack-card">
+          <div class="feature-card__media">
+            <img
+              src="public/assets/campaign/street-burger-closeup.jpg"
+              alt="Big Mama wrapped burgers and crispy fries in branded packaging"
+              width="1122"
+              height="1402"
+              loading="lazy"
+            />
+            <span class="feature-card__stamp">real campaign image</span>
+          </div>
+          <div class="feature-card__content">
+            <p class="eyebrow">Featured moment</p>
+            <h3>The street stack</h3>
+            <p>
+              Wrapped burgers, branded fries, bold sun, and the kind of street-level
+              photography that makes Big Mama feel immediate and memorable.
+            </p>
+            <div class="feature-card__meta">
+              <span>Campaign</span>
+              <span>Street food</span>
+              <span>Orange-led</span>
+            </div>
+            <a class="button button--primary liquid-button" href="#order">
+              <span class="liquid-layer" aria-hidden="true">
+                <span class="liquid-blob blob-1"></span>
+                <span class="liquid-blob blob-2"></span>
+                <span class="liquid-blob blob-3"></span>
+                <span class="liquid-blob blob-4"></span>
+              </span>
+              <span class="button-content"><span class="button-text">Make it mine</span></span>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="ingredients section-shell" id="experience" aria-labelledby="experience-title">
+        <div class="ingredients__intro reveal">
+          <p class="eyebrow">Scroll experience</p>
+          <h2 id="experience-title">Packaging, hands, heat.</h2>
+          <p>
+            The photo layers move at different speeds so the campaign feels dimensional,
+            not pasted onto the page.
+          </p>
+        </div>
+
+        <div class="ingredient-stage" data-ingredient-stage>
+          <img
+            class="ingredient-photo ingredient-photo--wide"
+            src="public/assets/campaign/street-crew-bags.jpg"
+            alt="Big Mama street crew with branded takeaway bags"
+            width="1086"
+            height="1448"
+            loading="lazy"
+            data-depth="0.05"
+          />
+          <img
+            class="ingredient-photo ingredient-photo--detail"
+            src="public/assets/campaign/street-burger-closeup.jpg"
+            alt="Close-up of Big Mama branded burgers and fries"
+            width="1122"
+            height="1402"
+            loading="lazy"
+            data-depth="0.12"
+          />
+          <div class="ingredient ingredient--bun" data-depth="0.08">toasted bun</div>
+          <div class="ingredient ingredient--cheese" data-depth="0.18">melt</div>
+          <div class="ingredient ingredient--patty" data-depth="0.28">smash patty</div>
+          <div class="ingredient ingredient--pickle" data-depth="0.2">pickles</div>
+          <div class="ingredient ingredient--fries" data-depth="0.34">fries</div>
+          <div class="ingredient ingredient--sauce" data-depth="0.12">orange sauce</div>
+        </div>
+      </section>
+
+      <section class="menu section-shell" id="menu" aria-labelledby="menu-title">
+        <div class="menu-category-header reveal">
+          <p class="eyebrow">Main menu</p>
+          <img
+            class="menu-category-title"
+            data-menu-title
+            src="public/assets/menu/beef-burgers-title.png"
+            alt="BEEF Burgers"
+            width="1078"
+            height="772"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="menu-category-switcher reveal" role="tablist" aria-label="Big Mama menu categories">
+          <button
+            class="menu-category-tab is-active"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="beef-menu-panel"
+            id="beef-menu-tab"
+            data-menu-tab="beef"
+            data-title-src="public/assets/menu/beef-burgers-title.png"
+            data-title-alt="BEEF Burgers"
+            data-title-width="1078"
+            data-title-height="772"
+          >
+            <span>BEEF Burgers</span>
+          </button>
+          <button
+            class="menu-category-tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="chicken-menu-panel"
+            id="chicken-menu-tab"
+            data-menu-tab="chicken"
+            data-title-src="public/assets/menu/chicken-burgers-title-transparent.png"
+            data-title-alt="CHICKEN Burgers"
+            data-title-width="1218"
+            data-title-height="774"
+          >
+            <span>CHICKEN Burgers</span>
+          </button>
+          <button class="menu-category-tab" type="button" role="tab" aria-selected="false" aria-disabled="true">
+            <span>COMBOS</span>
+          </button>
+          <button class="menu-category-tab" type="button" role="tab" aria-selected="false" aria-disabled="true">
+            <span>FRIES</span>
+          </button>
+        </div>
+
+        <div class="menu-panels">
+          <div
+            class="menu-panel is-active"
+            id="beef-menu-panel"
+            role="tabpanel"
+            aria-labelledby="beef-menu-tab"
+            data-menu-panel="beef"
+          >
+            <div class="menu-grid burger-menu-grid">
+              <article class="menu-card burger-card reveal">
+                <span class="burger-card__corner burger-card__corner--top" aria-hidden="true"></span>
+                <span class="burger-card__corner burger-card__corner--bottom" aria-hidden="true"></span>
+                <div class="menu-card__image burger-card__image">
+                  <img
+                    class="product-image product-image--mamas"
+                    src="public/assets/menu/mamas-original-single.png"
+                    alt="Mama's Original Single burger"
+                    width="1331"
+                    height="1027"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="menu-card__tag">01</span>
+                <h3>Mama's Original Single</h3>
+                <p>Single smashed beef, soft bun, house sauce, crisp lettuce, and Big Mama balance.</p>
+                <div class="burger-card__details" aria-label="Mama's Original Single ingredients">
+                  <span>Smashed beef</span>
+                  <span>Big Mama sauce</span>
+                  <span>Soft bun</span>
+                </div>
+                <a
+                  class="burger-card__cta"
+                  href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Order now</span>
+                  <span class="burger-card__cta-arrow" aria-hidden="true">→</span>
+                </a>
+              </article>
+              <article class="menu-card burger-card burger-card--featured reveal">
+                <span class="burger-card__corner burger-card__corner--top" aria-hidden="true"></span>
+                <span class="burger-card__corner burger-card__corner--bottom" aria-hidden="true"></span>
+                <span class="burger-card__badge">Best seller</span>
+                <div class="menu-card__image burger-card__image">
+                  <img
+                    class="product-image product-image--bacon"
+                    src="public/assets/menu/bacon-lovers-double.png"
+                    alt="Bacon Lovers Double Burger"
+                    width="1456"
+                    height="941"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="menu-card__tag">02</span>
+                <h3>Bacon Lovers Double Burger</h3>
+                <p>Double smashed beef, melted cheese, bacon crunch, and rich street-level heat.</p>
+                <div class="burger-card__details" aria-label="Bacon Lovers Double Burger ingredients">
+                  <span>Smashed beef</span>
+                  <span>Crispy bacon</span>
+                  <span>Melted cheese</span>
+                </div>
+                <a
+                  class="burger-card__cta"
+                  href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Order now</span>
+                  <span class="burger-card__cta-arrow" aria-hidden="true">→</span>
+                </a>
+              </article>
+              <article class="menu-card burger-card reveal">
+                <span class="burger-card__corner burger-card__corner--top" aria-hidden="true"></span>
+                <span class="burger-card__corner burger-card__corner--bottom" aria-hidden="true"></span>
+                <div class="menu-card__image burger-card__image">
+                  <img
+                    class="product-image product-image--truffle-beef"
+                    src="public/assets/menu/truffle-oh-mama-double.png"
+                    alt="Truffle Oh Mama Double Burger"
+                    width="1295"
+                    height="1025"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="menu-card__tag">03</span>
+                <h3>Truffle Oh Mama Double Burger</h3>
+                <p>Double beef, crispy texture, creamy truffle energy, and a deep savory finish.</p>
+                <div class="burger-card__details" aria-label="Truffle Oh Mama Double Burger ingredients">
+                  <span>Smashed beef</span>
+                  <span>Crispy onions</span>
+                  <span>Truffle sauce</span>
+                </div>
+                <a
+                  class="burger-card__cta"
+                  href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Order now</span>
+                  <span class="burger-card__cta-arrow" aria-hidden="true">→</span>
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="menu-panel"
+            id="chicken-menu-panel"
+            role="tabpanel"
+            aria-labelledby="chicken-menu-tab"
+            data-menu-panel="chicken"
+            hidden
+          >
+            <div class="menu-grid burger-menu-grid chicken-menu-grid">
+              <article class="menu-card burger-card chicken-card reveal">
+                <span class="burger-card__corner burger-card__corner--top" aria-hidden="true"></span>
+                <span class="burger-card__corner burger-card__corner--bottom" aria-hidden="true"></span>
+                <div class="menu-card__image burger-card__image">
+                  <img
+                    class="product-image product-image--lava"
+                    src="public/assets/menu/lava-mam-chicken.png"
+                    alt="Lava Mam' Chicken burger"
+                    width="1456"
+                    height="941"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="menu-card__tag">01</span>
+                <h3>Lava Mam' Chicken</h3>
+                <p>Crispy chicken, spicy lava sauce, fresh lettuce, pickles, and Big Mama heat.</p>
+                <div class="burger-card__details" aria-label="Lava Mam' Chicken ingredients">
+                  <span>Crispy chicken</span>
+                  <span>Lava sauce</span>
+                  <span>Fresh lettuce</span>
+                </div>
+                <a
+                  class="burger-card__cta"
+                  href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Order now</span>
+                  <span class="burger-card__cta-arrow" aria-hidden="true">→</span>
+                </a>
+              </article>
+
+              <article class="menu-card burger-card burger-card--featured chicken-card chicken-card--tokyo reveal" data-tokyo-card>
+                <span class="burger-card__corner burger-card__corner--top" aria-hidden="true"></span>
+                <span class="burger-card__corner burger-card__corner--bottom" aria-hidden="true"></span>
+                <span class="burger-card__badge">COMING SOON</span>
+                <div class="menu-card__image burger-card__image tokyo-card__image">
+                  <div class="tokyo-image-rotator" aria-label="Big Tokyo chicken burger preview">
+                    <img
+                      class="tokyo-image tokyo-image--transition is-active"
+                      src="public/assets/menu/big-tokyo-transition.png"
+                      alt="Big Tokyo Transition chicken burger"
+                      width="1086"
+                      height="1448"
+                      loading="eager"
+                    />
+                    <img
+                      class="tokyo-image tokyo-image--clean"
+                      src="public/assets/menu/big-tokyo.png"
+                      alt="Big Tokyo chicken burger"
+                      width="1086"
+                      height="1448"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
+                <span class="menu-card__tag">02</span>
+                <h3>Big Tokyo</h3>
+                <p>Crispy chicken, teriyaki glaze, fresh crunch, and Tokyo street-food energy.</p>
+                <div class="burger-card__details" aria-label="Big Tokyo ingredients">
+                  <span>Crispy chicken</span>
+                  <span>Teriyaki glaze</span>
+                  <span>Fresh crunch</span>
+                </div>
+                <a
+                  class="burger-card__cta"
+                  href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Order now</span>
+                  <span class="burger-card__cta-arrow" aria-hidden="true">→</span>
+                </a>
+              </article>
+
+              <article class="menu-card burger-card chicken-card reveal">
+                <span class="burger-card__corner burger-card__corner--top" aria-hidden="true"></span>
+                <span class="burger-card__corner burger-card__corner--bottom" aria-hidden="true"></span>
+                <div class="menu-card__image burger-card__image">
+                  <img
+                    class="product-image product-image--truffle-chicken"
+                    src="public/assets/menu/truffle-parmesan-chicken.png"
+                    alt="Truffle Parmesan Chicken burger"
+                    width="1456"
+                    height="941"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="menu-card__tag">03</span>
+                <h3>Truffle Parmesan Chicken</h3>
+                <p>Crispy chicken, truffle parmesan cream, golden crunch, and a rich savory finish.</p>
+                <div class="burger-card__details" aria-label="Truffle Parmesan Chicken ingredients">
+                  <span>Crispy chicken</span>
+                  <span>Truffle parmesan</span>
+                  <span>Golden crunch</span>
+                </div>
+                <a
+                  class="burger-card__cta"
+                  href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Order now</span>
+                  <span class="burger-card__cta-arrow" aria-hidden="true">→</span>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sticky-order-bar" data-sticky-order aria-label="Order Big Mama on efood">
+        <span class="sticky-order-bar__text">Ready for Big Mama?</span>
+        <a
+          class="sticky-order-bar__button"
+          href="https://www.e-food.gr/delivery/nea-filadelfeia/big-mama-8408071"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ORDER ON EFOOD <span aria-hidden="true">→</span>
+        </a>
+      </aside>
+
+      <section class="story section-shell" id="story" aria-labelledby="story-title">
+        <div class="story__media reveal">
+          <img
+            src="public/assets/campaign/street-crew-bags.jpg"
+            alt="Big Mama street campaign crew with branded bags"
+            width="1086"
+            height="1448"
+            loading="lazy"
+          />
+        </div>
+        <div class="story__content reveal">
+          <p class="eyebrow">Brand story</p>
+          <h2 id="story-title">Streetwear energy. Burger discipline.</h2>
+          <p>
+            The visual world is direct, sunny, social, and bold. The design keeps it
+            premium by giving the photography space, restraint, and a sharp orange system.
+          </p>
+          <div class="story-stats">
+            <span><strong>100%</strong> brand-forward</span>
+            <span><strong>0</strong> generic sections</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="signatures section-shell" aria-labelledby="signatures-title">
+        <div class="section-kicker reveal">
+          <p class="eyebrow">Signature items</p>
+          <h2 id="signatures-title">Stacked for quick decisions.</h2>
+        </div>
+        <div class="signature-strip">
+          <article class="signature-card reveal">
+            <div class="mini-plate"></div>
+            <h3>Lunch Stack</h3>
+            <p>Burger, fries, clean soda.</p>
+          </article>
+          <article class="signature-card reveal">
+            <div class="mini-plate mini-plate--fries"></div>
+            <h3>Fries n' Sauce</h3>
+            <p>Hot fries, orange dip.</p>
+          </article>
+          <article class="signature-card reveal">
+            <div class="mini-plate mini-plate--double"></div>
+            <h3>After Dark</h3>
+            <p>Double stack, extra melt.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery section-shell" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-kicker reveal">
+          <p class="eyebrow">Visual gallery</p>
+          <h2 id="gallery-title">Campaign shots with bite.</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item--large reveal">
+            <img src="public/assets/campaign/street-burger-closeup.jpg" alt="Big Mama branded burgers and fries shared outdoors" width="1122" height="1402" loading="lazy" />
+            <figcaption>Branded food ritual</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="public/assets/campaign/street-crew-bags.jpg" alt="Big Mama crew sitting outdoors with branded takeaway bags" width="1086" height="1448" loading="lazy" />
+            <figcaption>Street crew moment</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="public/assets/campaign/street-burger-closeup.jpg" alt="Big Mama fries and wrapped burgers in orange and white packaging" width="1122" height="1402" loading="lazy" />
+            <figcaption>Fries, wraps, sauce</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="proof section-shell" aria-label="Social proof">
+        <div class="quote-card reveal">
+          <p>
+            "The kind of burger brand that feels fast, bright, and premium before
+            the first bite."
+          </p>
+          <span>Launch-ready brand voice placeholder</span>
+        </div>
+        <div class="proof__badges reveal">
+          <span>Hot counter</span>
+          <span>Fresh layers</span>
+          <span>Sharp brand</span>
+        </div>
+      </section>
+
+      <section class="final-cta section-shell" id="order" aria-labelledby="order-title">
+        <div class="final-cta__inner reveal">
+          <img
+            class="final-cta__photo"
+            src="public/assets/campaign/street-crew-bags.jpg"
+            alt="Big Mama campaign crew with branded bags"
+            width="1086"
+            height="1448"
+            loading="lazy"
+          />
+          <img class="final-cta__logo" src="public/assets/big-mama-logo.png" alt="Big Mama Burgers n' Fries" width="834" height="860" loading="lazy" />
+          <h2 id="order-title">Bring the heat to the counter.</h2>
+          <p>Turn the orange bag, the wrapped burger, and the street moment into a reason to order now.</p>
+          <a class="button button--primary liquid-button" href="mailto:hello@bigmama.example">
+            <span class="liquid-layer" aria-hidden="true">
+              <span class="liquid-blob blob-1"></span>
+              <span class="liquid-blob blob-2"></span>
+              <span class="liquid-blob blob-3"></span>
+              <span class="liquid-blob blob-4"></span>
+            </span>
+            <span class="button-content"><span class="button-text">Start an order</span></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top">
+        <img src="public/assets/big-mama-logo.png" alt="Big Mama logo" width="834" height="860" loading="lazy" />
+      </a>
+      <div class="footer-links">
+        <a href="#menu">Menu</a>
+        <a href="#story">Story</a>
+        <a href="#order">Contact</a>
+      </div>
+      <p>Big Mama Burgers n' Fries. Placeholder legal copy.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
