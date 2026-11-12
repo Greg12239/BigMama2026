@@ -45,8 +45,11 @@ const loaderExitDelay = prefersReducedMotion ? 140 : 1500;
 const loaderExitDuration = prefersReducedMotion ? 160 : 760;
 const loaderFailSafeDelay = prefersReducedMotion ? 900 : 3600;
 const isNextStaticExport = () => Boolean(document.querySelector('script[src*="/_next/"]'));
+const bigMamaBasePath = typeof window !== "undefined" && typeof window.__BIG_MAMA_BASE__ === "string"
+  ? window.__BIG_MAMA_BASE__
+  : "";
 const resolveMenuTitleAsset = (assetPath) => {
-  if (isNextStaticExport()) return `/assets/${assetPath}`;
+  if (isNextStaticExport()) return `${bigMamaBasePath}/assets/${assetPath}`;
   return new URL(`public/assets/${assetPath}`, document.baseURI).href;
 };
 const menuTitleAssets = {

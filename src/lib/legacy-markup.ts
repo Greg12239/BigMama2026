@@ -7,9 +7,10 @@ function extractBodyMarkup(documentMarkup: string) {
   const bodyMatch = documentMarkup.match(/<body>([\s\S]*?)<\/body>/i);
   if (!bodyMatch) throw new Error("The legacy page body could not be found.");
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   return bodyMatch[1]
     .replace(/\s*<script[\s\S]*?<\/script>/gi, "")
-    .replaceAll("public/assets/", "/assets/");
+    .replaceAll("public/assets/", `${basePath}/assets/`);
 }
 
 export function getLegacyPageMarkup() {
