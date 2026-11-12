@@ -3815,6 +3815,11 @@ p {
 /* Bottled water ships on a white studio background; multiply drops it into the card. */
 #menu [data-product-id="water"] .product-image--water {
   mix-blend-mode: multiply;
+  filter: none;
+}
+
+#menu [data-product-id="water"]:hover .menu-card__image .product-image--water {
+  filter: none;
 }
 
 .location-section {
