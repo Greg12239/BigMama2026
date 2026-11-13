@@ -384,6 +384,18 @@ function initDrinkVariantSelector({
     });
   };
 
+  const loadSelectionImage = (variant, requestToken) => {
+    resolveImage(variant.image).then((loaded) => {
+      if (requestToken !== selectionRequestToken || variant.id !== activeVariantId) return;
+      if (!loaded) {
+        if (status) status.textContent = `${variant.title} selected. Its image could not be loaded.`;
+        return;
+      }
+
+      commitSelection(variant);
+    });
+  };
+
   const selectVariant = (variantId) => {
     const variant = variantsById.get(variantId);
     if (!variant) return;
@@ -394,19 +406,9 @@ function initDrinkVariantSelector({
       return;
     }
 
-    syncControls();
-    if (status) status.textContent = `Loading ${variant.title}.`;
-
-    resolveImage(variant.image).then((loaded) => {
-      if (requestToken !== selectionRequestToken) return;
-      if (!loaded) {
-        syncControls();
-        if (status) status.textContent = `Unable to load ${variant.title}. ${variantsById.get(activeVariantId).title} remains selected.`;
-        return;
-      }
-
-      commitSelection(variant);
-    });
+    activeVariantId = variant.id;
+    updatePresentation(variant);
+    loadSelectionImage(variant, requestToken);
   };
 
   group.addEventListener("change", (event) => {
