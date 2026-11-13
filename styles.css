@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --orange: #ff5400;
   --orange-deep: #dc3f00;
   --paper: #ffffff;
@@ -1107,58 +1107,6 @@ button {
   padding: 138px 0 72px;
 }
 
-.hero__ambient {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.heat-panel {
-  --angle: 0deg;
-  position: absolute;
-  display: block;
-  width: 280px;
-  height: 90px;
-  border: 1px solid rgba(255, 84, 0, 0.12);
-  background: linear-gradient(90deg, rgba(255, 84, 0, 0.11), rgba(255, 255, 255, 0));
-  transform: rotate(var(--angle)) translate3d(0, 0, 0);
-  animation: heatPanelDrift 8s var(--ease) infinite alternate;
-}
-
-.heat-panel--one {
-  --angle: -12deg;
-  top: 19%;
-  right: 4%;
-}
-
-.heat-panel--two {
-  --angle: 18deg;
-  bottom: 12%;
-  left: -8%;
-  height: 70px;
-  animation-delay: -2s;
-}
-
-.line {
-  position: absolute;
-  display: block;
-  width: 1px;
-  height: 200px;
-  background: linear-gradient(transparent, rgba(255, 84, 0, 0.34), transparent);
-  transform: rotate(28deg);
-}
-
-.line--one {
-  top: 18%;
-  left: 44%;
-}
-
-.line--two {
-  right: 10%;
-  bottom: 16%;
-  transform: rotate(-24deg);
-}
 
 .eyebrow {
   margin: 0 0 16px;
@@ -5609,12 +5557,6 @@ body.is-loaded .hero__content.is-visible .hero__actions .button:nth-child(2) {
   }
 }
 
-@keyframes heatPanelDrift {
-  to {
-    transform: rotate(var(--angle)) translate3d(24px, -18px, 0);
-  }
-}
-
 @keyframes orbitTilt {
   to {
     transform: rotate(4deg) scale(1.02);
@@ -7754,6 +7696,17 @@ h2 {
 
 #menu .menu-grid--single {
   grid-template-columns: minmax(0, min(100%, 460px));
+}
+
+@media (min-width: 1024px) {
+  #menu [data-drinks-grid] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+  }
+}
+
+.review-card[lang="el"] .review-card__name {
+  font-family: "Segoe UI", "Arial", sans-serif;
 }
 
 #menu .menu-grid--compact {
